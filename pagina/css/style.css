@@ -13,6 +13,8 @@ body {
 header {
   background-color: #2c3e50;
   padding: 20px;
+  align-items: center; 
+
 }
 
 .header-container {
@@ -34,6 +36,9 @@ header {
   color: #ffffff;
   font-size: 22px;
   font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 nav ul {
@@ -207,18 +212,67 @@ footer {
 }
 
 
-.cajitaimg{
+.hero {
+    width: calc(100% - 30px);
+    max-width: 1000px;
+    height: 350px;
+
+    margin: 30px auto;
+    padding: 40px;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.20),
+            rgba(0, 0, 0, 0.20)
+        ),
+        url("../img/image.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
     display: flex;
-    flex-direction: column;
     align-items: center;
+
+    border: 1px solid #dddddd;
+    border-radius: 5px;
 }
 
-.cap-bg {
-    
-    width: auto;
-    height: 400px;
-    
+.hero-content {
+    max-width: 550px;
+    color: white;
 }
+
+.hero-content h1 {
+    color: white;
+    font-size: 38px;
+    line-height: 1.1;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    color: white;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.hero-button {
+    display: inline-block;
+    background-color: #159bd0;
+    color: #ffffff;
+    padding: 13px 22px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
 
 @media (max-width: 768px) {
   .header-container {
@@ -266,18 +320,5 @@ footer {
     height: 100%;
     border: 0;
   }
-
-.cajitaimg{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.cap-bg {
-    
-    width: auto;
-    height: 400px;
-    
-}
 
 }
